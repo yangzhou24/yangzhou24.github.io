@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yang Zhou</title>
+    <meta name="author" content="Yang Zhou">
+    <meta
+      name="description"
+      content="Yang Zhou is a Ph.D. student at Fudan University."
+    >
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--
+        MAINTENANCE GUIDE
+        1. Update your bio and links in the ABOUT block.
+        2. Add new papers inside the correct year block in PUBLICATIONS.
+        3. For paper thumbnails, place files at images/papers/<paper-key>.jpg.
+        4. For optional paper videos, replace the media div with a <video> block using images/papers/<paper-key>.mp4.
+        5. Remove the class "is-placeholder" after the corresponding media file exists.
+        6. Profile photo: images/me.jpg (see profile-photo div below).
+      -->
+
+      <!-- ==================== ABOUT ==================== -->
+      <div class="section section-top">
+        <div class="profile-row">
+          <div class="profile-text">
+            <h1 class="name">Yang Zhou (周洋)</h1>
+            <p>
+              I am a 2nd-year Ph.D. student in the <a href="https://ai.fudan.edu.cn/">College of Computer Science</a> at
+              <a href="https://www.fudan.edu.cn/en/">Fudan University</a>, advised by Dr.
+              <a href="https://tonghe90.github.io/">Tong He</a>. I received my Bachelor of Computer
+              Science and Technology from
+              <a href="https://en.scu.edu.cn/">Sichuan University</a> in June 2024.
+            </p>
+            <p>
+              My research interests lie at the intersection of world modeling, reinforcement learning,
+              and data-centric AI. I am broadly interested in building 4D world models for perception,
+              reconstruction, prediction, and planning, supported by scalable multimodal data
+              infrastructure. More recently, I have also been exploring RL-based alignment for diffusion
+              models and large language models.
+            </p>
+            <p>
+              Feel free to drop an email to reach out! (discussion, collaboration, etc.)
+            </p>
+            <p class="meta-links">
+              <a href="mailto:yangzhou.gm@gmail.com">Email</a>
+              <span class="link-divider">/</span>
+              <a href="https://scholar.google.com/citations?user=b-cvKnQAAAAJ&amp;hl=zh-CN&amp;authuser=1">Scholar</a>
+              <span class="link-divider">/</span>
+              <a href="https://github.com/yangzhou24">GitHub</a>
+              <span class="link-divider">/</span>
+              <a href="https://x.com/YangZhou25640">X</a>
+            </p>
+          </div>
+          <div class="profile-media">
+            <div
+              class="profile-photo"
+              data-media="images/me.jpg"
+              style="background-image: url('images/me.jpg');"
+              role="img"
+              aria-label="Portrait of Yang Zhou"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- ================== END ABOUT ================== -->
+
+      <!-- ==================== RESEARCH ==================== -->
+      <!-- <div class="section">
+        <h2 class="section-title">Research</h2>
+        <p>
+          My current research focuses on world modeling, multimodal data infrastructure, and
+          reinforcement learning for generative models. I am particularly interested in 4D scene
+          understanding and generation, scalable data-centric pipelines, and alignment methods for
+          diffusion models and LLMs.
+        </p>
+      </div> -->
+      <!-- ================== END RESEARCH ================== -->
+
+      <!-- ==================== PUBLICATIONS ==================== -->
+      <div class="section">
+        <h2 class="section-title">Publications</h2>
+        <!--
+          MEDIA RULES
+          1. Keep publication media at a consistent width and let height follow the asset's native ratio
+          2. Use <video class="paper-visual"> for videos and <img class="paper-visual"> for images
+          3. Put paper thumbnails in images/papers/<paper-key>.jpg when available
+          4. Keep placeholders only for papers without media
+        -->
+
+        <div class="year-block">
+
+          <!-- paper: omniworld -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/omniworld.jpg, then remove "is-placeholder" from the div below -->
+            <!-- <div
+              class="paper-media"
+              data-media="images/papers/omniworld.jpg"
+              style="background-image: url('images/papers/omniworld.jpg');"
+              role="img"
+              aria-label="OmniWorld media placeholder"
+            ></div> -->
+            <div class="paper-media">
+              <video
+                class="paper-visual"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/papers/omniworld.jpg"
+              >
+                <source src="images/papers/omniworld-teaser-240p-3x-stacked-with-cover.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!-- OPTIONAL VIDEO: replace the div above with a video block using images/papers/omniworld.mp4 -->
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2509.12201">
+                OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling
+              </a>
+              <p class="paper-authors">
+                <strong>Yang Zhou</strong>,
+                <a href="https://yyfz.github.io/">Yifan Wang</a>,
+                <a href="https://zhoutimemachine.github.io">Jianjun Zhou</a>,
+                <a href="https://amberheart.github.io/">Wenzheng Chang</a>,
+                <a href="https://github.com/ghy0324">Haoyu Guo</a>,
+                <a href="https://github.com/LiZizun">Zizun Li</a>,
+                <a href="https://kaijing.space/">Kaijing Ma</a>,
+                <a href="https://scholar.google.com/citations?user=VuTRUg8AAAAJ">Xinyue Li</a>,
+                <a href="https://scholar.google.com/citations?user=5SuBWh0AAAAJ">Yating Wang</a>,
+                et al.
+              </p>
+              <p class="paper-venue"><em>ICLR</em>, 2026</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2509.12201">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://yangzhou24.github.io/OmniWorld/">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/yangzhou24/OmniWorld">code</a>
+                <span class="link-divider">/</span>
+                <a href="https://huggingface.co/datasets/InternRobotics/OmniWorld">dataset</a>
+              </p>
+              <p class="paper-summary">
+                A multi-domain and multimodal dataset designed to support large-scale 4D world modeling
+                across robotics, simulation, human activities, and in-the-wild scenarios.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: omniworld -->
+
+          <!-- paper: pi3 -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/pi3.jpg, then remove "is-placeholder" from the div below -->
+            <!-- <div
+              class="paper-media"
+              data-media="images/papers/pi3.jpg"
+              style="background-image: url('images/papers/pi3.jpg');"
+              role="img"
+              aria-label="Pi3 media placeholder"
+            ></div> -->
+
+            <div class="paper-media">
+              <video
+                class="paper-visual"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/papers/pi3.jpg"
+              >
+                <source src="images/papers/pi3-teaser-240p-2x.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2507.13347">
+                &pi;<sup>3</sup>: Permutation-Equivariant Visual Geometry Learning
+              </a>
+              <p class="paper-authors">
+                <a href="https://yyfz.github.io/">Yifan Wang*</a>,
+                <a href="https://zhoutimemachine.github.io">Jianjun Zhou*</a>,
+                <a href="https://www.haoyizhu.site/">Haoyi Zhu</a>,
+                <a href="https://amberheart.github.io/">Wenzheng Chang</a>,
+                <strong>Yang Zhou</strong>,
+                <a href="https://github.com/LiZizun">Zizun Li</a>,
+                <a href="https://sotamak1r.github.io/">Junyi Chen</a>,
+                <a href="https://oceanpang.github.io">Jiangmiao Pang</a>,
+                <a href="https://cshen.github.io">Chunhua Shen</a>,
+                <a href="https://tonghe90.github.io/">Tong He</a>
+              </p>
+              <p class="paper-venue"><em>ICLR</em>, 2026</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2507.13347">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://yyfz.github.io/pi3/">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/yyfz/Pi3">code</a>
+              </p>
+              <p class="paper-summary">
+                A geometry learning framework with permutation-equivariant design for visual reasoning
+                and structured world understanding.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: pi3 -->
+
+          <!-- paper: wint3r -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/wint3r.jpg, then remove "is-placeholder" from the div below -->
+            <!-- <div
+              class="paper-media"
+              data-media="images/papers/wint3r.jpg"
+              style="background-image: url('images/papers/wint3r.jpg');"
+              role="img"
+              aria-label="Wint3r media placeholder"
+            ></div> -->
+            <div class="paper-media">
+              <video
+                class="paper-visual"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/papers/wint3r.jpg"
+              >
+                <source src="images/papers/wint3r-teaser-240p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!-- OPTIONAL VIDEO: replace the div above with a video block using images/papers/wint3r.mp4 -->
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2509.05296">
+                Wint3r: Window-based Streaming Reconstruction with Camera Token Pool
+              </a>
+              <p class="paper-authors">
+                <a href="https://github.com/LiZizun">Zizun Li</a>,
+                <a href="https://zhoutimemachine.github.io">Jianjun Zhou</a>,
+                <a href="https://yyfz.github.io/">Yifan Wang</a>,
+                <a href="https://github.com/ghy0324">Haoyu Guo</a>,
+                <a href="https://amberheart.github.io/">Wenzheng Chang</a>,
+                <strong>Yang Zhou</strong>,
+                <a href="https://www.haoyizhu.site/">Haoyi Zhu</a>,
+                <a href="https://sotamak1r.github.io/">Junyi Chen</a>,
+                <a href="https://cshen.github.io">Chunhua Shen</a>,
+                <a href="https://tonghe90.github.io/">Tong He</a>
+              </p>
+              <p class="paper-venue"><em>ICLR</em>, 2026</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2509.05296">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://arxiv.org/abs/2509.05296">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/LiZizun/WinT3R">code</a>
+              </p>
+              <p class="paper-summary">
+                A streaming reconstruction method that improves long-horizon scene modeling with a
+                window-based design and camera token pooling.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: wint3r -->
+        </div>
+
+        <div class="year-block">
+
+          <!-- paper: aether -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/aether.jpg, then remove "is-placeholder" from the div below -->
+            <!-- <div
+              class="paper-media"
+              data-media="images/papers/aether.jpg"
+              style="background-image: url('images/papers/aether.jpg');"
+              role="img"
+              aria-label="Aether media placeholder"
+            ></div> -->
+            <div class="paper-media">
+              <video
+                class="paper-visual"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/papers/aether.jpg"
+              >
+                <source src="images/papers/aether-teaser-240p-2x.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!-- OPTIONAL VIDEO: replace the div above with a video block using images/papers/aether.mp4 -->
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2503.18945">
+                Aether: Geometric-Aware Unified World Modeling
+              </a>
+              <p class="paper-authors">
+                <a href="https://www.haoyizhu.site/">Haoyi Zhu*</a>,
+                <a href="https://yyfz.github.io/">Yifan Wang*</a>,
+                <a href="https://zhoutimemachine.github.io">Jianjun Zhou*</a>,
+                <a href="https://amberheart.github.io/">Wenzheng Chang*</a>,
+                <strong>Yang Zhou*</strong>,
+                <a href="https://github.com/LiZizun">Zizun Li*</a>,
+                <a href="https://sotamak1r.github.io/">Junyi Chen*</a>,
+                <a href="https://cshen.github.io">Chunhua Shen</a>,
+                <a href="https://oceanpang.github.io">Jiangmiao Pang</a>,
+                <a href="https://tonghe90.github.io/">Tong He</a>
+              </p>
+              <p class="paper-venue"><em>ICCV</em>, 2025. <strong>Best Paper Award</strong>, RIWM workshop.</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2503.18945">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://aether-world.github.io/">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/InternRobotics/Aether">code</a>
+              </p>
+              <p class="paper-summary">
+                A unified world modeling framework that incorporates geometry-aware representations for
+                perception, prediction, and generation.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: aether -->
+
+          <!-- paper: deepverse -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/deepverse.jpg, then remove "is-placeholder" from the div below -->
+            <!-- <div
+              class="paper-media"
+              data-media="images/papers/deepverse.jpg"
+              style="background-image: url('images/papers/deepverse.jpg');"
+              role="img"
+              aria-label="DeepVerse media placeholder"
+            ></div> -->
+            <div class="paper-media">
+              <video
+                class="paper-visual"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="images/papers/deepverse.jpg"
+              >
+                <source src="images/papers/deepverse-teaser-240p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <!-- OPTIONAL VIDEO: replace the div above with a video block using images/papers/deepverse.mp4 -->
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2506.01103">
+                DeepVerse: 4D Autoregressive Video Generation as a World Model
+              </a>
+              <p class="paper-authors">
+                <a href="https://sotamak1r.github.io/">Junyi Chen</a>,
+                <a href="https://www.haoyizhu.site/">Haoyi Zhu</a>,
+                <a href="https://xianglonghe.github.io/">Xianglong He</a>,
+                <a href="https://yyfz.github.io/">Yifan Wang</a>,
+                <a href="https://zhoutimemachine.github.io">Jianjun Zhou</a>,
+                <a href="https://amberheart.github.io/">Wenzheng Chang</a>,
+                <strong>Yang Zhou</strong>,
+                <a href="https://github.com/LiZizun">Zizun Li</a>,
+                <a href="https://github.com/Kr1sJFU">Zhoujie Fu</a>,
+                <a href="https://oceanpang.github.io">Jiangmiao Pang</a>,
+                <a href="https://tonghe90.github.io/">Tong He</a>
+              </p>
+              <p class="paper-venue"><em>arXiv</em>, 2025</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2506.01103">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://sotamak1r.github.io/deepverse/">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/SOTAMak1r/DeepVerse">code</a>
+              </p>
+              <p class="paper-summary">
+                An autoregressive video generation framework that treats 4D video synthesis as a world
+                modeling problem.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: deepverse -->
+
+          <!-- paper: hisplat -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/hisplat.jpg, then remove "is-placeholder" from the div below -->
+            <div class="paper-media">
+              <img class="paper-visual" src="images/papers/hisplat.jpg" alt="HiSplat">
+            </div>
+            <!-- OPTIONAL VIDEO: replace the div above with a video block using images/papers/hisplat.mp4 -->
+            <div class="paper-content">
+              <a class="paper-title" href="https://arxiv.org/abs/2410.06245">
+                HiSplat: Hierarchical 3D Gaussian Splatting for Generalizable Sparse-View Reconstruction
+              </a>
+              <p class="paper-authors">
+                <a href="https://scholar.google.com/citations?user=K7drMDgAAAAJ&amp;hl=en">Shengji Tang</a>,
+                <a href="https://ywcmaike.github.io/">Weicai Ye</a>,
+                <a href="https://scholar.google.com/citations?user=UEZZP5QAAAAJ&amp;hl=en">Peng Ye</a>, 
+                Weihao Lin, 
+                <strong>Yang Zhou</strong>, 
+                <a href="https://eetchen.github.io/publications/">Tao Chen</a>,
+                <a href="https://wlouyang.github.io/">Wanli Ouyang</a>,
+              </p>
+              <p class="paper-venue"><em>ICLR</em>, 2025</p>
+              <p class="paper-links">
+                <a href="https://arxiv.org/abs/2410.06245">paper</a>
+                <span class="link-divider">/</span>
+                <a href="https://open3dvlab.github.io/HiSplat/">project page</a>
+                <span class="link-divider">/</span>
+                <a href="https://github.com/Open3DVLab/HiSplat">code</a>
+              </p>
+              <p class="paper-summary">
+                A hierarchical Gaussian splatting approach for robust and generalizable sparse-view 3D
+                reconstruction.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: hisplat -->
+        </div>
+      </div>
+      <!-- ================== END PUBLICATIONS ================== -->
+
+      <!-- ==================== Projects ==================== -->
+      <div class="section">
+        <h2 class="section-title">Projects</h2>
+          <!-- paper: RealGRPO -->
+          <div class="paper-item">
+            <!-- MEDIA: upload images/papers/realgrpo.jpg, then remove "is-placeholder" from the div below -->
+            <div class="paper-media">
+              <img class="paper-visual" src="images/papers/realgrpo.jpg" alt="RealGRPO">
+            </div>
+            <div class="paper-content">
+              <a class="paper-title" href="https://github.com/yangzhou24/RealGRPO">
+                RealGRPO: A Simple Way to Eliminate Reward Hacking in GRPO Diffusion Alignment
+              </a>
+              <p class="paper-authors">
+                <strong>Yang Zhou</strong>, 
+                <a href="https://github.com/ghy0324">Haoyu Guo</a>
+              </p>
+              <p class="paper-venue">Feb. 2026</p>
+              <p class="paper-links">
+                <a href="https://github.com/yangzhou24/RealGRPO">code</a>
+              </p>
+              <p class="paper-summary">
+                RealGRPO addresses reward hacking in GRPO-based diffusion alignment by using an LLM to dynamically generate contrastive style pairs.
+              </p>
+            </div>
+          </div>
+          <!-- end paper: RealGRPO -->
+      </div>
+      <!-- ================== END Projects ================== -->
+
+      <!-- ==================== EXPERIENCE ==================== -->
+      <div class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-item">
+          <div class="experience-heading">
+            <div>
+              <h3>Shanghai Artificial Intelligence Laboratory</h3>
+              <p class="experience-role">Research Intern</p>
+              <p class="experience-supervisors">
+                Supervisors:
+                <a href="https://tonghe90.github.io/">Tong He</a>
+                <span class="experience-supervisors-sep">&middot;</span>
+                <a href="https://wlouyang.github.io/">Wanli Ouyang</a>
+              </p>
+            </div>
+            <p class="experience-meta">Shanghai, China<br>Dec. 2023 -- Present</p>
+          </div>
+          <ul class="experience-list">
+            <li>Worked on 4D world models for perception, reconstruction, prediction, and planning.</li>
+            <li>
+              Contributed to large-scale multimodal data infrastructure and annotation pipelines for
+              world modeling.
+            </li>
+            <li>
+              Explored RL-based alignment for diffusion models and large language models.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ================== END EXPERIENCE ================== -->
+
+      <!-- ==================== AWARDS ==================== -->
+      <!-- <div class="section">
+        <h2 class="section-title">Awards</h2>
+        <ul class="award-list">
+          <li>Outstanding Graduate, Sichuan University, 2024</li>
+          <li>First-Class Comprehensive Scholarship, Sichuan University, 2022</li>
+          <li>Outstanding Student, Sichuan University, 2021</li>
+          <li>Provincial First Prize, China Undergraduate Mathematical Contest in Modeling, 2022</li>
+          <li>
+            Meritorious Winner, Mathematical Contest in Modeling / Interdisciplinary Contest in
+            Modeling, 2022
+          </li>
+        </ul>
+      </div> -->
+      <!-- ================== END AWARDS ================== -->
+
+      <!-- ==================== Professional Services ==================== -->
+      <div class="section">
+        <h2 class="section-title">Professional Services</h2>
+        <ul class="award-list">
+          <li>Conference reviewer for ICLR 2026, CVPR 2026.</li>
+        </ul>
+      </div>
+      <!-- ================== END Professional Services ================== -->
+
+      <!-- ==================== FOOTER ==================== -->
+      <div class="section footer-note">
+        <p>
+          Thanks <a href="https://jonbarron.info/">Jon Barron </a> for sharing the source code of this <a href="https://github.com/jonbarron/jonbarron_website">website template</a>.
+        </p>
+      </div>
+      <!-- ================== END FOOTER ================== -->
+    </div>
+  </body>
+</html>
